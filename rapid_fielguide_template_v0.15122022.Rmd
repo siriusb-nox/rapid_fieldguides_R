@@ -1,0 +1,204 @@
+---
+title: "Rapid Field Identification Guides Made in R"
+output: 
+  flexdashboard::flex_dashboard:
+    navbar:
+    theme: 
+      version: 4
+      bootswatch: journal
+    orientation: rows
+    social: menu
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+1
+=======================================================================
+## Column {data-width="600"}{data-height="250"}
+
+### 
+<font style="font-size: 25px"><div align="center">**Orchidaceae from Sitio Bacchus (Rio de Janeiro, Brazil) - Part I**</font></div>
+
+<font style="font-size: 14px"><div align="center">[Oscar A. Perez-Escobar](https://www.tropicalphylodiv.com/)<sup>1+</sup>, [Diego Bogarín-Chavez](https://vinv.ucr.ac.cr/sigpro/web/researchers/111510798)<sup>2+</sup>, [Gerardo Salazar-Chavez](http://www.ibiologia.unam.mx/directorio/s/salazar/salazar_publ.htm)<sup>3</sup>; [Allison Perrigo](https://www.gu.se/en/about/find-staff/allisonperrigo)<sup>4</sup>; [Alexandre Antonelli](https://antonelli-lab.net/)<sup>1,4+</sup></font></div>
+
+<font style="font-size: 14px"><div align="center"><sup>1</sup>Royal Botanic Gardens, Kew, TW92DX, UK; <sup>2</sup>Jardin Botanico Lankester, Costa Rica; <sup>3</sup> Universiad Nacional Autonoma de Mexico, Mexico; <sup>4</sup>University of Gothenburg, Sweden</font></div>
+
+<font style="font-size: 11px"><div align="center"><sup>+</sup>**Corresponding author:** o.perez-escobar@kew.org, bogarin.diego@gmail.com; a.antonelli@kew.org **Photos:** Oscar A. Pérez-Escobar; **Produced and designed by:** Oscar A. Pérez-Escobar & Diego Bogarín-Chavez</font></div>
+
+<font style="font-size: 11px"><div align="center">**Notes:** Growth habit: Terrestrial (**T**), Epiphypte (**E**), Lytophyte (**L**); **Flowering time:** JFMAMJ<span style="color:MidnightBlue">**J**</span>ASOND; Endemic:<span style="color:crimson">**En**</span></font></div>
+
+## Column {data-width="600"} {data-height="300"}
+
+### **INTRODUCTION**
+<font style="font-size: 14px">[Sitio Bacchus](https://www.araca-project.org/) is a 120-hectare Atlantic forest reserve located in Rio de Janeiro State. Located at 1,200 m.a.s.l., this scientific reserve boasts a pristine cloud forest connected to the "Parque Estadual dos Tres Picos". With as little as 3% of its original cover area remaining, the Atlantic forest is a plant biodiversity hotspot (REF), and certainly one of the three orchid species-richest ecosystems on Earth (REF). Yet, little is known about the distribution of the orchid flora across the Atlantic forest. With this rapid identification field guide, we aim to document the orchid diversity ocurring in Sitio Bacchus.</font>
+
+
+### **LOCATION**
+
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  setView(lng=-42.49569, lat=-22.37521, zoom=12) %>%
+  addMarkers(lng=-42.49569, lat=-22.37521, popup="Sitio Bacchus")
+```
+
+## Column {data-width="200"}{data-height="450"}
+
+### [Bifrenaria atropurpurea Lindl.](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:617534-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: T** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D - <span style="color:crimson">**En**</span></font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Bifrenaria_atropurpurea.redux.jpg", fit = "cover", position="center", w="300px", caption = "flower, frontal view")
+```
+
+### [Dichaea cogniauxiana Schltr.](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:79251-2)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Dichaea_cogniauxiana.redux.png", fit = "cover", position="center", w="400px", caption = "Flower, frontal view")
+```
+
+### [Eurystyles cogniauxii (Kranezl.) Schltr.](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:102302-2)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D - <span style="color:crimson">**En**</span></font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Eurystyles_cogniauxii.redux.png", fit = "cover", position="center", w="300px", caption = "Plant, frontal view")
+```
+
+### [Eurystyles cogniauxii (Kranezl.) Schltr.](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:102302-2)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D - <span style="color:crimson">**En**</span></font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Eurystyles_cogniauxii2.redux.png", fit = "cover", position="center", w="400px", caption = "Inflorescence, frontal view")
+```
+
+2
+=======================================================================
+
+## Column {data-width="200"}{data-height="450"}
+
+### [Gomesa planifolia (G. Lodd.) Klotzch ex Rchb.f.](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:635945-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Gomesa_planifolia2.redux.png", fit = "cover", position="center", w="300px", caption = "Plant")
+```
+
+### [Gomesa planifolia (G. Lodd.) Klotzch ex Rchb.f.](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:635945-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Gomesa_planifolia.redux.png", fit = "cover", position="center", w="400px", caption = "Inflorescence, side view")
+```
+
+### [Octomeria crassifolia Lindl.](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:646200-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Octomeria_densiflora.redux.png", fit = "cover", position="center", w="300px", caption = "Inflorescence, side view")
+```
+
+### [Pelexia aff. novofriburgnesis (Rchb.f.) Garay](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:186749-2)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Pelexia_aff_novofriburgensis2.redux.png", fit = "cover", position="center", w="400px", caption = "Inflorescence, side view")
+```
+
+## Column {data-width="200"}{data-height="450"}
+
+### [Pelexia aff. novofriburgnesis (Rchb.f.) Garay](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:186749-2)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Pelexia_aff_novofriburgensis.redux.png", fit = "cover", position="center", w="400px", caption = "Flower, front view")
+```
+
+### [Pabstiella trifida (Lindl.) Luer](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77094139-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Pleurothallis_aff_trifida.redux.png", fit = "cover", position="center", w="300px", caption = "Plant with flower, side view")
+```
+
+### [Pabstiella trifida (Lindl.) Luer](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77094139-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Pleurothallis_aff_trifida2.redux.png", fit = "cover", position="center", w="300px", caption = "Plant with flower, front view")
+```
+
+### [Anathallis rubrolimbata (Hoehne) Luer & Toscano](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77102725-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D - <span style="color:crimson">**En**</span></font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Pleurothallois_aff_rubro_limbata.redux.png", fit = "cover", position="center", w="300px", caption = "Flower, side view")
+```
+
+## Column {data-width="200"}{data-height="450"}
+
+### Pleurothallis sp.
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Pleurothallis_sp.redux.png", fit = "cover", position="center", w="400px", caption = "Flowers, front view")
+```
+
+### [Promenaea xanthina (Lindl.) Lindl.](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:655073-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Promenaea_xanthina.redux.png", fit = "cover", position="center", w="300px", caption = "Flower, side view")
+```
+
+### [Stelis grandiflora Lindl.](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77094139-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D</font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Stelis_grandiflora2.redux.png", fit = "cover", position="center", w="300px", caption = "Flowers, frontal view")
+```
+
+### [Stelis sclerophylla (Lindl.) Karremans](https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77142174-1)
+
+<font style="font-size: 11px"><div align="center">**Notes: E** - JFMAMJJASO<span style="color:MidnightBlue">**N**</span>D - <span style="color:crimson">**En**</span></font></div>
+
+```{r}
+library(pixture)
+pixfigure("/Users/diegobogarin/Documents/Ejercicios_Oscar/rapid_fierldguides_16122022/photos/fieldguide_v1/redux20p/Stelis_screlophylla.redux.png", fit = "cover", position="center", w="300px", caption = "Flowers, side view")
+```
+
+
